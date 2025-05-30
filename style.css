@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.menu-container {
+    color: hsl(229, 44%, 96%);
+    background-color: hsl(229, 44%, 51%);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 900px;
+    margin: 0 15px;
+    border: 0.5px solid hsl(229, 44%,  86%);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    font-weight: 500;
+}
+
+.website {
+    width: 100px;
+    padding: 10px 15px;
+    background-color: hsl(229, 51%, 59%);
+}
+
+.search {
+    margin: 10px 15px;
+}
+
+.main-wrapper {
+    display: flex;
+}
+
+
+.left-sidebar-container {
+    /* border: 1px solid hsl(229, 51%, 59%); */
+    flex: 1;
+}
+
+.right-sidebar-container {
+    /* border: 1px solid hsl(229, 51%, 59%); */
+    flex: 1;
+}
+
+.main-container {
+    /* border: 1px solid hsl(229, 51%, 59%); */
+    display: flex;
+    justify-content: center;
+    flex: 1 0 500px;
+}
+
+.main-content {
+    padding: 45px;
+}
+
+h1 {
+    margin: 25px 0;
+    color: hsl(229, 51%, 59%);
+}
+
+p {
+    margin: 30px 0;
+    color: hsl(229, 30%, 40%);
+    line-height: 1.75;
+    word-spacing: 0.5px;
+}
+
+.flexbox-demo {
+    width: auto;
+    height: 800px;
+    padding: 10px;
+    border: 1px solid hsl(229, 51%, 59%);
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 5px solid hsl(229, 55%, 42%);
+    border-radius: 5px;
+    color: hsl(229, 44%, 96%);
+    background-color: hsl(229, 51%, 59%);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.two {
+    flex: 2 0 100px;
+}
