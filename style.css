@@ -67,8 +67,38 @@ h1 {
 p {
     margin: 30px 0;
     color: hsl(229, 30%, 40%);
+    font-size: 16px;
     line-height: 1.75;
     word-spacing: 0.5px;
+}
+
+footer {
+    margin: -15px 0 30px 25px;
+    color: hsl(229, 30%, 60%);
+    font-size: 14px;
+    line-height: 1.6;
+    word-spacing: 0.5px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+span.attribute {
+    display: inline;
+    margin: -4px;
+    padding: 4px;
+    background-color: hsl(229, 80%, 95%);
+    color: hsl(229, 51%, 59%);
+    font-size: 18px;
+}
+
+span.value {
+    display: inline;
+    margin: -4px;
+    padding: 4px;
+    background-color: hsl(229, 80%, 98%);
+    color: hsl(229, 51%, 59%);
 }
 
 .flexbox-demo {
@@ -77,8 +107,21 @@ p {
     padding: 10px;
     border: 1px solid hsl(229, 51%, 59%);
     display: flex;
-    align-content: flex-start;
+
+    flex-direction: row;
+    /*  flex-direction: 
+    [ row , row-reverse ; column , column-reverse ] */
+
+    justify-content: space-between;
+    /*  justify-content:
+    [ flex-start , flex-end ,
+     space-around , space-between , space-evenly ] */
+
+    align-items: flex-end;
+
     flex-wrap: wrap;
+    align-content: center;
+
     gap: 3px;
 }
 
@@ -87,13 +130,19 @@ p {
     height: 100px;
     padding: 5px;
     border: 5px solid hsl(229, 55%, 42%);
-    border-radius: 5px;
+    border-radius: 10px;
     color: hsl(229, 44%, 96%);
     background-color: hsl(229, 51%, 59%);
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
 }
 
 .two {
+    width: 400px;
     flex: 2 0 100px;
+}
+
+.three {
+    flex: 3;
 }

@@ -30,14 +30,48 @@
                     <div class="flexbox-text">
                         <h1 id="flexbox">flexbox</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-                            qui officia deserunt mollit anim id est laborum.
+                            <b><span class="attribute">flex-direction:</span></b> modifies the main axis which, by default, 
+                            has the value <em><span class="value">row</span></em>, running horizontal from left to right. The opposite to 
+                            this, <em><span class="value">row-reverse</span></em>, runs horizontal from right to left. With the value
+                            <em><span class="value">column</span></em>, the main axis now runs vertical from top to bottom. The opposite is
+                            <em><span class="value">column-reverse</span></em>, running from bottom to top.
+                        </p>
+                        <footer>
+                            <ul>
+                                <li>row</li>
+                                <li>row-reverse</li>
+                                <li>column</li>
+                                <li>column-reverse</li>
+                            </ul>
+                        </footer>
+                        <p>
+                            <b><span class="attribute">justify-content:</span></b> aligns items along the main axis. Thus when
+                            flex-direction has the values row / row-reverse, items are adjusted horizontally. Likewise, when flex-direction has
+                            the values column / column-reverse, items are adjusted vertically. 
+                        </p>
+                        <footer>
+                            <ul>
+                                <li>flex-start</li>
+                                <li>flex-end</li>
+                                <li>space-between</li>
+                                <li>space-around</li>
+                                <li>space-evenly</li>
+                            </ul>
+                        </footer>
+                        <p>
+                            <b><span class="attribute">align-item:</b> aligns items along the cross axis. Thus when
+                            flex-direction has the values row / row-reverse, items are adjusted <em>vertically</em>. Likewise, when flex-direction has
+                            the values column / column-reverse, items are adjusted <em>horizontally</em>. 
+                        </p>
+                        <p>
+                            Note : <b><span class="attribute">align-content:</span></b> appears to override align-items when there's the attribute
+                            <b><span class="attribute">flex-wrap: wrap</span></b>. 
                         </p>
                     </div>
                     <div class="flexbox-demo demo">
+                        <div class="flex-item one">one</div>
+                        <div class="flex-item two">two</div>
+                        <div class="flex-item three">three</div>
                         <div class="flex-item one">one</div>
                         <div class="flex-item two">two</div>
                         <div class="flex-item three">three</div>
