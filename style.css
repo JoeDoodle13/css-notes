@@ -84,7 +84,11 @@ footer ul {
     list-style: none;
 }
 
-span.attribute {
+h3.code.attribute {
+    display: inline;
+}
+
+code.attribute {
     display: inline;
     margin: -4px;
     padding: 4px;
@@ -93,7 +97,7 @@ span.attribute {
     font-size: 18px;
 }
 
-span.value {
+code.value {
     display: inline;
     margin: -4px;
     padding: 4px;
@@ -112,7 +116,7 @@ span.value {
     /*  flex-direction: 
     [ row , row-reverse ; column , column-reverse ] */
 
-    justify-content: space-between;
+    justify-content: space-evenly;
     /*  justify-content:
     [ flex-start , flex-end ,
      space-around , space-between , space-evenly ] */
@@ -120,7 +124,8 @@ span.value {
     align-items: flex-end;
 
     flex-wrap: wrap;
-    align-content: center;
+    align-content: flex-start;
+    /* Overrides 'align-items' */
 
     gap: 3px;
 }
@@ -136,13 +141,11 @@ span.value {
     text-align: center;
     font-weight: bold;
     font-size: 20px;
+
+    flex: 1;
 }
 
 .two {
-    width: 400px;
-    flex: 2 0 100px;
-}
-
-.three {
-    flex: 3;
+    max-width: 300px;
+    flex: 1 0 200px;
 }
