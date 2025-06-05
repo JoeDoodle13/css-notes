@@ -59,7 +59,7 @@
                             </ul>
                         </footer>
                         <p>
-                            <strong><code class="attribute">align-item:</code></strong> aligns items along the cross axis. Thus when
+                            <strong><code class="attribute">align-items:</code></strong> aligns items along the cross axis. Thus when
                             flex-direction has the values row / row-reverse, items are adjusted <em>vertically</em>. Likewise, when flex-direction has
                             the values column / column-reverse, items are adjusted <em>horizontally</em>. 
                         </p>
@@ -68,8 +68,17 @@
                             <strong><code class="attribute">flex-wrap: wrap</code></strong>. 
                         </p>
                         <p>
-                            <strong><code class="attribute">flex:</code></strong> some text
+                            <strong><code class="attribute">flex: 1</code></strong> is shorthand for <code class="attribute">flex: 1 1 0</code>, 
+                            which adjusts the values of the attributes <code class="attribute">flex-grow</code>, <code class="attribute">flex-shrink</code>, 
+                            and <code class="attribute">flex-basis</code>.
                         </p>
+                        <footer>
+                            <ul>
+                                <li>flex: 1         (1 1 0)</li>
+                                <li>flex: initial   (0 1 auto)</li>
+                                <li>flex: auto      (1 1 auto)</li>
+                            </ul>
+                        </footer>
                     </div>
                     <div class="flexbox-demo demo">
                         <div class="flex-item one">one</div>
@@ -81,6 +90,18 @@
                         <div class="flex-item one">one</div>
                         <div class="flex-item two">two</div>
                         <div class="flex-item three">three</div>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <div class="details-text">
+                        <h1 id="details">details</h1>
+                        <p>
+                            This section contains the tag 'details'.
+                        </p>
+                        <details title="blue">
+                            <summary>You can change this</summary>
+                            <p>And this is what's inside the details</p>
+                        </details>
                     </div>
                 </div>
             </div>

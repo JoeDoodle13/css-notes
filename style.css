@@ -65,7 +65,7 @@ h1 {
 }
 
 p {
-    margin: 30px 0;
+    margin: 15px 0;
     color: hsl(229, 30%, 40%);
     font-size: 16px;
     line-height: 1.75;
@@ -73,7 +73,7 @@ p {
 }
 
 footer {
-    margin: -15px 0 30px 25px;
+    margin: 0 0 30px 25px;
     color: hsl(229, 30%, 60%);
     font-size: 14px;
     line-height: 1.6;
@@ -91,7 +91,8 @@ h3.code.attribute {
 code.attribute {
     display: inline;
     margin: -4px;
-    padding: 4px;
+    padding: 6px;
+    border-radius: 10px;
     background-color: hsl(229, 80%, 95%);
     color: hsl(229, 51%, 59%);
     font-size: 18px;
@@ -101,6 +102,7 @@ code.value {
     display: inline;
     margin: -4px;
     padding: 4px;
+    border-radius: 10px;
     background-color: hsl(229, 80%, 98%);
     color: hsl(229, 51%, 59%);
 }
